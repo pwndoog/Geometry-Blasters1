@@ -29,7 +29,7 @@ public class MainMenu implements Screen{
 
 
     public class MyActor extends Actor {
-        Texture texture = new Texture(Gdx.files.internal("playbtn.png"));
+        Texture texture = new Texture(Gdx.files.internal("playbutton.png"));
 
 
         public float actorX = viewport.getWorldWidth() / 2 - (texture.getWidth() / 2), actorY = viewport.getWorldHeight() / 2 - (texture.getHeight());
