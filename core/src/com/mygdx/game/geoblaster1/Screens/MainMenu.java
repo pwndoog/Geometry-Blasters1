@@ -84,7 +84,7 @@ public class MainMenu implements Screen{
         viewport.setScreenPosition(0, 0);
 
         bg = new Texture(Gdx.files.internal("backgroundtest.jpg"));
-        title = new Texture(Gdx.files.internal("gametitle.png"));
+        title = new Texture(Gdx.files.internal("title.png"));
 
         stage = new Stage(viewport);
         myActor = new MyActor();
