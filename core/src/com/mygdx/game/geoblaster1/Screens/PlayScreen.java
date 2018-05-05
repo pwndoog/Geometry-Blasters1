@@ -36,7 +36,7 @@ public class PlayScreen implements Screen{
     private Texture circle;
     private double timescale = 1;
 
-
+    private int testgithubrepository = 1;
     private Rectangle playerRECT;
     private Texture bulletimg, bg, enemysquare, enemyRectangle;
     private Array<Rectangle> bullets;
