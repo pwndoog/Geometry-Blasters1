@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\nigel\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx\1.9.8\a35a0076fbce873f9c2d5a1a1c8066244231bb3c\gdx-1.9.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="a35a0076fbce873f9c2d5a1a1c8066244231bb3c">
+        <dex dex="C:\Users\nigel\Downloads\GeoBlaster\android\build\intermediates\pre-dexed\debug\gdx-1.9.8_5c590cd3f2feafa6476bfb30bbc8b0ee2bb58b66.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nigel\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-backend-android\1.9.8\84024cd60ad6f26370891fbcd17de9f0167e662\gdx-backend-android-1.9.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="084024cd60ad6f26370891fbcd17de9f0167e662">
+        <dex dex="C:\Users\nigel\Downloads\GeoBlaster\android\build\intermediates\pre-dexed\debug\gdx-backend-android-1.9.8_bc54456f24f626a5a31c4594d7c8804e6254075c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nigel\Downloads\GeoBlaster\core\build\libs\core-1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="be6433b948dc8c3ce872915663c61e3d412b4e5e">
+        <dex dex="C:\Users\nigel\Downloads\GeoBlaster\android\build\intermediates\pre-dexed\debug\core-1.0_2e6185b6465e86301f43e26dfaf35adea7d4fb65.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nigel\.gradle\caches\modules-2\files-2.1\com.badlogicgames.gdx\gdx-box2d\1.9.8\6f0497b7958216464101adfb7bdc3a0f7b88d6d3\gdx-box2d-1.9.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="6f0497b7958216464101adfb7bdc3a0f7b88d6d3">
+        <dex dex="C:\Users\nigel\Downloads\GeoBlaster\android\build\intermediates\pre-dexed\debug\gdx-box2d-1.9.8_785a019e6c5f865f0270717a61c596d64f69b6f2.jar" />
+    </item>
+
+</items>
