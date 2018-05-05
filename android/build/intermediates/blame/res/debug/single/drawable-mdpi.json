@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\nigel\\Desktop\\Geometry-Blasters1\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "C:\\Users\\nigel\\Desktop\\Geometry-Blasters1\\android\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
         "merged": "C:\\Users\\nigel\\Downloads\\GeoBlaster\\android\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
         "source": "C:\\Users\\nigel\\Downloads\\GeoBlaster\\android\\res\\drawable-mdpi\\ic_launcher.png"
     }
