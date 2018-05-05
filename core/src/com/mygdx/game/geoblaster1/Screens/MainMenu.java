@@ -6,6 +6,7 @@ import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Batch;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.math.Vector3;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -23,6 +24,8 @@ public class MainMenu implements Screen{
     private Stage stage;
     MyActor myActor;
     private Texture bg, title;
+    private BitmapFont font;
+    CharSequence str = "0";
 
 
     public class MyActor extends Actor {
@@ -77,17 +80,19 @@ public class MainMenu implements Screen{
     public MainMenu(MainActivity game){
         this.game = game;
         camera = new OrthographicCamera();
-        viewport = new FitViewport(1200, 2300, camera);
+        viewport = new FitViewport(1400, 2900, camera);
         viewport.setScreenPosition(0, 0);
 
         bg = new Texture(Gdx.files.internal("backgroundtest.jpg"));
-        title = new Texture(Gdx.files.internal("title.png"));
+        title = new Texture(Gdx.files.internal("gametitle.png"));
 
         stage = new Stage(viewport);
         myActor = new MyActor();
         Gdx.input.setInputProcessor(stage);
         myActor.setTouchable(Touchable.enabled);
         stage.addActor(myActor);
+
+        font = new BitmapFont(Gdx.files.internal("textfile.fnt"), false);
     }
 
     @Override
@@ -99,9 +104,10 @@ public class MainMenu implements Screen{
     public void render(float delta) {
         game.batch.setProjectionMatrix(stage.getCamera().combined);
         game.batch.begin();
-        game.batch.draw(bg, 0, 0, viewport.getWorldWidth() + 100, bg.getHeight());
-        game.batch.draw(bg, 0, viewport.getWorldHeight() / 2, viewport.getWorldWidth() + 100, bg.getHeight());
-        game.batch.draw(title, viewport.getWorldWidth() - (viewport.getWorldWidth() / 4), viewport.getWorldHeight() / 10);
+        //game.batch.draw(bg, 0, 0, viewport.getWorldWidth() + 100, bg.getHeight());
+        //game.batch.draw(bg, 0, viewport.getWorldHeight() / 2, viewport.getWorldWidth() + 100, bg.getHeight());
+        game.batch.draw(title, (viewport.getWorldWidth() - viewport.getWorldWidth()) + viewport.getWorldWidth() / 200, viewport.getWorldHeight() - viewport.getWorldHeight() / 5, viewport.getWorldWidth(), title.getHeight());
+        font.draw(game.batch, str, viewport.getWorldWidth() - (viewport.getWorldWidth() / 2) - (viewport.getWorldWidth() / 25), viewport.getWorldHeight() - viewport.getWorldHeight() / 3);
         game.batch.end();
         stage.act(Gdx.graphics.getDeltaTime());
         stage.draw();
